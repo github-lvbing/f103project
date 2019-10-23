@@ -191,6 +191,7 @@ $(BUILD_DIR)/%.bin: $(BUILD_DIR)/%.elf | $(BUILD_DIR)
 	cp $(BUILD_DIR)/$(TARGET).elf .
 	cp $(BUILD_DIR)/$(TARGET).bin .
 	cp $(BUILD_DIR)/$(TARGET).hex .
+	ctags -nR
 
 $(BUILD_DIR):
 	mkdir $@
